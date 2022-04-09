@@ -1,1 +1,20 @@
 /* Add application styles & imports to this file! */
+
+* {
+  --primary-color: #02c5bc;
+  box-sizing: border-box !important;
+
+  font-family: sans-serif;
+  background: #aeb8c2;
+}
+button {
+  background-color: #2926c9;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  position: '';
+  --display: '';
+  --flex-direction: '';
+  padding: 8px;
+  width: 33.33%;
+}

@@ -17,10 +17,15 @@ export class LoginComponent implements OnInit {
     this.form= this.formBuilder.group({
       password:['',[Validators.required, Validators.minLength(8)]],
       email:['', [Validators.required, Validators.email]],
+      user:['', []],
    })
   }
 
   ngOnInit() {}
+
+  get UserName(){
+    return this.form.get("user");
+  }
 
   get Password(){
     return this.form.get("password");
